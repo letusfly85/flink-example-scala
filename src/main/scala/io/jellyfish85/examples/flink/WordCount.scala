@@ -4,7 +4,7 @@ import org.apache.flink.api.java.utils.ParameterTool
 import org.apache.flink.api.scala.ExecutionEnvironment
 import org.apache.flink.api.scala._
 
-object Main {
+object WordCount {
 
   def main(args: Array[String]) = {
 

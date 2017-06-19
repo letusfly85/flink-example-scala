@@ -9,11 +9,13 @@ scalaVersion := "2.11.11"
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 libraryDependencies ++= {
-  val flinkV       = "1.3.0"
+  val flinkVersion = "1.3.0"
+  val kafkaVersion = "0.10.2"
   Seq(
-    "org.apache.flink" % "flink-core" % flinkV,
-    "org.apache.flink" %% "flink-scala" % flinkV,
-    "org.apache.flink" %% "flink-clients" % flinkV,
-    "org.apache.flink" %% "flink-streaming-scala" % flinkV
+    "org.apache.flink" %  "flink-core" % flinkVersion,
+    "org.apache.flink" %% "flink-scala" % flinkVersion,
+    "org.apache.flink" %% "flink-clients" % flinkVersion,
+    "org.apache.flink" %% "flink-streaming-scala" % flinkVersion,
+    "org.apache.flink" %%  "flink-connector-kafka-0.10" % flinkVersion
   )
 }
